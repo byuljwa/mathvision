@@ -110,7 +110,8 @@ if __name__ == '__main__':
             else:
                 cv2.putText(draw_frame, "Polygon completed", (10, window_size[1]-10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 148, 0), 1, cv2.LINE_AA)
                 area = polyArea(np.array(points))
-                cv2.putText(draw_frame, f"Area: {area}", (10, window_size[1]-30), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 148, 0), 1, cv2.LINE_AA)            
+                cv2.putText(draw_frame, f"Area: {area}", (10, window_size[1]-30), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 148, 0), 1, cv2.LINE_AA)
+
             
         cv2.imshow("PolygonDemo", draw_frame)
         if cv2.waitKey(50) == 27:

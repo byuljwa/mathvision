@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 import os.path as osp
 
 import cv2
@@ -6,7 +5,7 @@ import numpy as np
 from utils import classifyHomography
 
 MIN_MATCH_NUM = 4
-WEB_CAM_MODE = False
+WEB_CAM_MODE = True
 
 def proc_video(video_capture: cv2.VideoCapture, model: np.ndarray):
     model_gray = cv2.cvtColor(model, cv2.COLOR_BGR2GRAY)
