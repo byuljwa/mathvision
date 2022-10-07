@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from utils import classifyHomography, polyArea
 
-check_homography = False
+check_homography = True
 window_size = (640, 480)
 polygon_close_with_same_point_click = True # for macos
 
